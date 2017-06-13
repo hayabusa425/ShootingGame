@@ -12,7 +12,7 @@ void main()
 
 #ifdef FRAGMENT
 uniform vec4 _Time;
-float t = _Time.y;
+float t = _Time.y / 2.0;
 void main()
 {	
 	vec2 p = (gl_FragCoord.xy * 2.0 - 512) / min(512, 512); // 正規化
